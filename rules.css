@@ -29,6 +29,30 @@ main {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title-bar h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+}
+
+.title-bar img.logo {
+  height: 60px;
+}
+
+.player-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
 .example {
   border: 1px solid #ccc;
   border-radius: 6px;
