@@ -27,6 +27,23 @@ function getFlagImg(countryName) {
   return `<img src="https://flagcdn.com/w40/${code.toLowerCase()}.png" alt="${countryName} flag" style="width: 20px; vertical-align: middle; margin-right: 4px;">`;
 }
 
+const selectedTeams = {};
+
+function updateFooter(totalGroups) {
+  const footerContainer = document.getElementById("selected-teams");
+  footerContainer.innerHTML = "";
+  Object.values(selectedTeams).forEach(team => {
+    const img = document.createElement("img");
+    img.src = team.logosrc;
+    img.alt = team.TeamName;
+    img.onerror = function() { this.onerror = null; this.src = 'img/logos/default.png'; };
+    footerContainer.appendChild(img);
+  });
+  document.getElementById("selected-count").textContent = `${Object.keys(selectedTeams).length}/${totalGroups} selected`;
+  const submitButton = document.getElementById("submit-button");
+  submitButton.disabled = Object.keys(selectedTeams).length !== totalGroups;
+}
+
 fetch('teams.json')
   .then(response => response.json())
   .then(teams => {
@@ -38,6 +55,9 @@ fetch('teams.json')
       if (!groups[team.group]) groups[team.group] = [];
       groups[team.group].push(team);
     });
+
+    const totalGroups = Object.keys(groups).length;
+    updateFooter(totalGroups);
 
     for (const group in groups) {
       const section = document.createElement("div");
@@ -70,12 +90,17 @@ fetch('teams.json')
           if (!isAlreadySelected) {
             // Select new card and gray out others
             card.classList.add("selected");
+            selectedTeams[group] = team;
             cards.forEach(c => {
               if (!c.classList.contains("selected")) {
                 c.classList.add("disabled");
               }
             });
+          } else {
+            delete selectedTeams[group];
           }
+
+          updateFooter(totalGroups);
         });
 
         grid.appendChild(card);
