@@ -2,18 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Team Selector</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Draft Rules</title>
+  <link rel="stylesheet" href="rules.css">
 </head>
 <body>
-  <h1>Select One Team per Group</h1>
-  <div id="groups-container"></div>
-  <footer id="selection-footer">
-    <div id="selected-teams"></div>
-    <span id="selected-count"></span>
-    <button id="submit-button" disabled>Submit</button>
-  </footer>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="select.html">Team Selection</a>
+  </nav>
+  <main>
+    <h1>Welcome to the Club World Cup Draft</h1>
+    <p>This draft lets you compete against friends by picking clubs from the Club World Cup groups. Here is how it works:</p>
+    <ul>
+      <li><strong>Pick one team from every group.</strong></li>
+      <li>When your team plays a match, you earn <strong>3 points</strong> for a win or <strong>1 point</strong> for a draw.</li>
+      <li>You get bonus points when other players picked the team your club is playing against:
+        <ul>
+          <li><strong>Win:</strong> +3 points for each opposing player who chose the other team.</li>
+          <li><strong>Draw:</strong> +1 point for each opposing player who chose the other team.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>The total from all of your club's matches decides your final score. The player with the most points after the tournament wins!</p>
 
-  <script src="script.js"></script>
+    <div class="example">
+      <h2>Scoring Example</h2>
+      <div class="match">
+        <img src="img/logos/realmadrid.png" alt="Real Madrid logo">
+        <span class="score">2 - 1</span>
+        <img src="img/logos/alhilal.png" alt="Al-Hilal logo">
+      </div>
+      <p>Two other players picked Al-Hilal. Real Madrid wins:</p>
+      <ul>
+        <li>Win points: 3</li>
+        <li>Bonus: 3 points &times; 2 players = 6</li>
+        <li><strong>Total for this match: 9 points</strong></li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <div class="match">
+        <img src="img/logos/realmadrid.png" alt="Real Madrid logo">
+        <span class="score">1 - 1</span>
+        <img src="img/logos/alhilal.png" alt="Al-Hilal logo">
+      </div>
+      <p>If the same match ended in a draw:</p>
+      <ul>
+        <li>Draw points: 1</li>
+        <li>Bonus: 1 point &times; 2 players = 2</li>
+        <li><strong>Total for this match: 3 points</strong></li>
+      </ul>
+    </div>
+
+    <a href="select.html" class="start-btn">Get Startet</a>
+  </main>
 </body>
 </html>
