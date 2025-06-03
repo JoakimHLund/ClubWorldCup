@@ -1,0 +1,41 @@
+[
+  { "TeamName": "Palmeiras", "Country": "Brazil", "logosrc": "img/logos/palmeiras.png", "group": "A", "pot": 1 },
+  { "TeamName": "Porto", "Country": "Portugal", "logosrc": "img/logos/porto.png", "group": "A", "pot": 2 },
+  { "TeamName": "Al Ahly", "Country": "Egypt", "logosrc": "img/logos/alahly.png", "group": "A", "pot": 3 },
+  { "TeamName": "Inter Miami CF", "Country": "United States", "logosrc": "img/logos/intermiamicf.png", "group": "A", "pot": 4 },
+
+  { "TeamName": "Paris Saint-Germain", "Country": "France", "logosrc": "img/logos/parissaintgermain.png", "group": "B", "pot": 1 },
+  { "TeamName": "Atlético Madrid", "Country": "Spain", "logosrc": "img/logos/atleticomadrid.png", "group": "B", "pot": 2 },
+  { "TeamName": "Botafogo", "Country": "Brazil", "logosrc": "img/logos/botafogo.png", "group": "B", "pot": 3 },
+  { "TeamName": "Seattle Sounders FC", "Country": "United States", "logosrc": "img/logos/seattlesoundersfc.png", "group": "B", "pot": 4 },
+
+  { "TeamName": "Bayern Munich", "Country": "Germany", "logosrc": "img/logos/bayernmunich.png", "group": "C", "pot": 1 },
+  { "TeamName": "Auckland City", "Country": "New Zealand", "logosrc": "img/logos/aucklandcity.png", "group": "C", "pot": 4 },
+  { "TeamName": "Boca Juniors", "Country": "Argentina", "logosrc": "img/logos/bocajuniors.png", "group": "C", "pot": 3 },
+  { "TeamName": "Benfica", "Country": "Portugal", "logosrc": "img/logos/benfica.png", "group": "C", "pot": 2 },
+
+  { "TeamName": "Flamengo", "Country": "Brazil", "logosrc": "img/logos/flamengo.png", "group": "D", "pot": 1 },
+  { "TeamName": "Espérance de Tunis", "Country": "Tunisia", "logosrc": "img/logos/esperancedetunis.png", "group": "D", "pot": 4 },
+  { "TeamName": "Chelsea", "Country": "England", "logosrc": "img/logos/chelsea.png", "group": "D", "pot": 2 },
+  { "TeamName": "Los Angeles FC", "Country": "United States", "logosrc": "img/logos/losangelesfc.png", "group": "D", "pot": 3 },
+
+  { "TeamName": "River Plate", "Country": "Argentina", "logosrc": "img/logos/riverplate.png", "group": "E", "pot": 1 },
+  { "TeamName": "Urawa Red Diamonds", "Country": "Japan", "logosrc": "img/logos/urawareddiamonds.png", "group": "E", "pot": 4 },
+  { "TeamName": "Monterrey", "Country": "Mexico", "logosrc": "img/logos/monterrey.png", "group": "E", "pot": 3 },
+  { "TeamName": "Inter Milan", "Country": "Italy", "logosrc": "img/logos/intermilan.png", "group": "E", "pot": 2 },
+
+  { "TeamName": "Fluminense", "Country": "Brazil", "logosrc": "img/logos/fluminense.png", "group": "F", "pot": 1 },
+  { "TeamName": "Borussia Dortmund", "Country": "Germany", "logosrc": "img/logos/borussiadortmund.png", "group": "F", "pot": 2 },
+  { "TeamName": "Ulsan HD", "Country": "South Korea", "logosrc": "img/logos/ulsanhd.png", "group": "F", "pot": 3 },
+  { "TeamName": "Mamelodi Sundowns", "Country": "South Africa", "logosrc": "img/logos/mamelodisundowns.png", "group": "F", "pot": 4 },
+
+  { "TeamName": "Manchester City", "Country": "England", "logosrc": "img/logos/manchestercity.png", "group": "G", "pot": 1 },
+  { "TeamName": "Wydad AC", "Country": "Morocco", "logosrc": "img/logos/wydadac.png", "group": "G", "pot": 3 },
+  { "TeamName": "Al Ain", "Country": "United Arab Emirates", "logosrc": "img/logos/alain.png", "group": "G", "pot": 4 },
+  { "TeamName": "Juventus", "Country": "Italy", "logosrc": "img/logos/juventus.png", "group": "G", "pot": 2 },
+
+  { "TeamName": "Real Madrid", "Country": "Spain", "logosrc": "img/logos/realmadrid.png", "group": "H", "pot": 1 },
+  { "TeamName": "Al-Hilal", "Country": "Saudi Arabia", "logosrc": "img/logos/alhilal.png", "group": "H", "pot": 3 },
+  { "TeamName": "Pachuca", "Country": "Mexico", "logosrc": "img/logos/pachuca.png", "group": "H", "pot": 4 },
+  { "TeamName": "Red Bull Salzburg", "Country": "Austria", "logosrc": "img/logos/redbullsalzburg.png", "group": "H", "pot": 2 }
+]

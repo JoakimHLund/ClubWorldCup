@@ -1,0 +1,64 @@
+body {
+  font-family: system-ui, Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+}
+
+#groups-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.group {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.group h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.team-card {
+  background: #fdfdfd;
+  border: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.team-card.selected {
+  border-color: #007bff;
+  background-color: #e9f0ff;
+}
+
+.team-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+.team-card.disabled {
+  opacity: 0.4;
+  pointer-events: auto; /* Ensure disabled cards can still be clicked */
+}
+
+.team-card:hover {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
