@@ -1,8 +1,8 @@
 body {
   font-family: system-ui, Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif;
   padding: 20px;
-  background: #000;
-  color: #d4af37;
+  background: #111;
+  color: #c9a646;
   line-height: 1.6;
 }
 
@@ -11,7 +11,7 @@ body {
 main {
   max-width: 800px;
   margin: 0 auto;
-  background: #1a1a1a;
+  background: #222;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -42,7 +42,7 @@ main {
 }
 
 .example {
-  border: 1px solid #d4af37;
+  border: 1px solid #c9a646;
   border-radius: 6px;
   padding: 15px;
   margin-top: 20px;
@@ -71,12 +71,12 @@ main {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 15px;
-  background: #d4af37;
+  background: #c9a646;
   color: #000;
   border-radius: 4px;
   text-decoration: none;
 }
 
 .start-btn:hover {
-  background: #b8860b;
+  background: #a57c0a;
 }
